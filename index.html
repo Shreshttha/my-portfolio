@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreshttha Goel | Video Editor, Animator & Motion Designer</title>
+  <meta name="description" content="Portfolio of Shreshttha Goel - Video Editor, Animator & Motion Designer. Specializing in brand films, YouTube documentary pacing, 2D animation, and AI-powered social video." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Ambient Glow -->
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-symbol">🎬</span>
+        <span class="logo-text">Shreshttha Goel<span class="accent-dot">.</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#work" class="nav-item">Selected Work</a>
+        <a href="#drive" class="nav-item">Google Drive Archive</a>
+        <a href="#process" class="nav-item">Process</a>
+        <a href="#skills" class="nav-item">Skills & Software</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#contact" class="nav-btn-mobile">Get in Touch</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-primary">Let's Connect</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span> Open to Full-Time, Freelance & Studio Roles
+      </div>
+      
+      <h1 class="hero-title">
+        Video Editor, <span class="gradient-text">Animator</span> & Motion Designer.
+      </h1>
+
+      <p class="hero-subtitle">
+        I cut stories that hold attention and build motion graphics that make brands feel alive. A mix of client campaigns and self-directed work, all shot, edited, or animated with the same care.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#work" class="btn btn-primary btn-lg">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+          Explore Selected Work
+        </a>
+        <a href="https://drive.google.com/drive/u/1/folders/1Zr5mNo9_dqPJ4Ok-o-em3oodoKjJ1eJK" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+          </svg>
+          Google Drive Video Vault ↗
+        </a>
+      </div>
+
+      <!-- Hero Featured Reel Preview Card -->
+      <div class="hero-showreel-card" id="showreel" onclick="openShowreelModal()">
+        <div class="showreel-overlay">
+          <div class="play-button-pulse">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+          <div class="showreel-meta">
+            <span class="showreel-tag">Featured Portfolio Showcase</span>
+            <h3>Commercial Films • Wildlife Documentary • Animation • AI Reels</h3>
+            <p>Featuring Zentilo Logo Launch, Trivyom Instagram Campaigns, Wildlife Series, and Animation Studies.</p>
+          </div>
+        </div>
+
+        <div class="showreel-thumbnail-bg">
+          <div class="grid-pattern-overlay"></div>
+          <div class="mockup-timeline">
+            <div class="track v1"><span>Zentilo — Logo Launch Master Cut</span></div>
+            <div class="track v2"><span>Motion Graphics & Kinetic Typography</span></div>
+            <div class="track a1"><span>Foley, Ambient Nature & Sound FX</span></div>
+            <div class="track a2"><span>Audio Mix & Dynamic Master</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics / Strengths Section -->
+  <section class="quick-stats">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <span class="stat-number">AI + Craft</span>
+        <span class="stat-label">AI Mastery Certified + Handcrafted Motion</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">Commercial</span>
+        <span class="stat-label">Proven Client Work for Zentilo & Trivyom</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">9:16 & 16:9</span>
+        <span class="stat-label">Multi-Format Mastery (Reels, Ads & YouTube)</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">Story First</span>
+        <span class="stat-label">Rhythm, Retention, Sound Design & Color</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section class="work-section" id="work">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Portfolio Showcase</div>
+        <h2 class="section-title">Selected Projects & Campaigns</h2>
+        <p class="section-desc">
+          A blend of commercial client work, YouTube documentary storytelling, experimental 2D animations, and AI-driven social reels.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="commercial">Commercial (Zentilo & Trivyom)</button>
+        <button class="filter-btn" data-filter="animation">Animation & Motion</button>
+        <button class="filter-btn" data-filter="editing">YouTube & Wildlife</button>
+        <button class="filter-btn" data-filter="ai">AI Mastery & Reels (9:16)</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projectsGrid">
+        
+        <!-- Project 1: Zentilo Logo Launch Film -->
+        <article class="project-card" data-category="commercial">
+          <div class="project-media-wrapper" onclick="openProjectModal('zentilo')">
+            <div class="project-badge">Commercial Launch</div>
+            <div class="project-preview-visual p-gradient-1">
+              <div class="play-hover-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="preview-text-art">
+                <span class="kinetic-text" style="letter-spacing: 4px;">ZENTILO</span>
+                <span class="kinetic-text outline">PREFABRICATION</span>
+                <span class="kinetic-text glow">LOGO LAUNCH SPOT</span>
+              </div>
+            </div>
+            <div class="aspect-indicator">16:9 Brand Film</div>
+          </div>
+          
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">DaVinci Resolve</span>
+              <span class="tag">Premiere Pro</span>
+              <span class="tag">Brand Launch</span>
+              <span class="tag">Sound Design</span>
+            </div>
+            <h3 class="project-title" onclick="openProjectModal('zentilo')">Zentilo — Prefabrication Construction Logo Film</h3>
+            <p class="project-summary">
+              A high-impact logo launch spot cut for a modern prefabrication construction firm. Focused on structural precision, heavy metallic sound design, and sleek cinematic pacing.
+            </p>
+            <div class="project-footer">
+              <button class="link-btn" onclick="openProjectModal('zentilo')">
+                View Breakdown & Video
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Trivyom Instagram Reels & Ads -->
+        <article class="project-card vertical-card" data-category="commercial ai">
+          <div class="project-media-wrapper" onclick="openProjectModal('trivyom')">
+            <div class="project-badge">Client Ads (9:16)</div>
+            <div class="project-preview-visual p-gradient-3">
+              <div class="play-hover-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="vertical-phone-mockup">
+                <div class="hook-text">TRIVYOM CAMPAIGN</div>
+                <div class="captions-mockup">
+                  <span class="word-active">HIGH CONVERTING</span>
+                  <span class="word">INSTAGRAM</span>
+                  <span class="word">AD REELS</span>
+                </div>
+              </div>
+            </div>
+            <div class="aspect-indicator">9:16 Vertical</div>
+          </div>
+          
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Premiere Pro</span>
+              <span class="tag">Canva</span>
+              <span class="tag">Figma</span>
+              <span class="tag">Instagram Ads</span>
+            </div>
+            <h3 class="project-title" onclick="openProjectModal('trivyom')">TRIVYOM — Instagram Reels & Commercial Ads</h3>
+            <p class="project-summary">
+              Conceptualized and edited promotional reels and advertisements for TRIVYOM. Designed with high-retention hooks, modern typography, and algorithmic engagement in mind.
+            </p>
+            <div class="project-footer">
+              <button class="link-btn" onclick="openProjectModal('trivyom')">
+                View Breakdown & Video
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Wildlife Enthusiast YouTube Series -->
+        <article class="project-card" data-category="editing">
+          <div class="project-media-wrapper" onclick="openProjectModal('wildlife')">
+            <div class="project-badge">YouTube Series</div>
+            <div class="project-preview-visual p-gradient-2">
+              <div class="play-hover-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="preview-text-art">
+                <span class="kinetic-text" style="color: #34d399;">WILDLIFE</span>
+                <span class="kinetic-text outline">ENTHUSIAST</span>
+                <span class="kinetic-text glow" style="font-size:1.1rem; color:#6ee7b7;">DOCUMENTARY CUT</span>
+              </div>
+            </div>
+            <div class="aspect-indicator">16:9 Documentary</div>
+          </div>
+          
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">DaVinci Resolve</span>
+              <span class="tag">Premiere Pro</span>
+              <span class="tag">Documentary Pacing</span>
+              <span class="tag">Nature Color Grade</span>
+            </div>
+            <h3 class="project-title" onclick="openProjectModal('wildlife')">Wildlife Enthusiast — YouTube Channel Series</h3>
+            <p class="project-summary">
+              A series of YouTube documentary videos celebrating wildlife and natural wonders. Structured with serene narrative pacing, layered organic foley audio, and rich color grading in DaVinci Resolve.
+            </p>
+            <div class="project-footer">
+              <button class="link-btn" onclick="openProjectModal('wildlife')">
+                View Breakdown & Video
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: AI Mastery & Generative Reels -->
+        <article class="project-card vertical-card" data-category="ai">
+          <div class="project-media-wrapper" onclick="openProjectModal('ai-reels')">
+            <div class="project-badge">AI Mastery (9:16)</div>
+            <div class="project-preview-visual p-gradient-4">
+              <div class="play-hover-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="vertical-phone-mockup">
+                <div class="hook-text" style="color:#38bdf8;">AI VIDEO LAB</div>
+                <div class="captions-mockup">
+                  <span class="word-active" style="color:#a855f7;">GENERATIVE</span>
+                  <span class="word">INSTAGRAM</span>
+                  <span class="word">AI REELS</span>
+                </div>
+              </div>
+            </div>
+            <div class="aspect-indicator">9:16 AI Reel</div>
+          </div>
+          
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">AI Mastery Certified</span>
+              <span class="tag">AI Video Tools</span>
+              <span class="tag">Premiere Pro</span>
+              <span class="tag">Photoshop</span>
+            </div>
+            <h3 class="project-title" onclick="openProjectModal('ai-reels')">AI Mastery & Personal Generative Instagram Reels</h3>
+            <p class="project-summary">
+              Completed advanced courses on AI Mastery and applied bleeding-edge generative video workflows to produce viral, aesthetically unique personal Instagram reels.
+            </p>
+            <div class="project-footer">
+              <button class="link-btn" onclick="openProjectModal('ai-reels')">
+                View Breakdown & Video
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: Animation First Project (Red Ball) -->
+        <article class="project-card" data-category="animation">
+          <div class="project-media-wrapper" onclick="openProjectModal('red-ball')">
+            <div class="project-badge">Animation Milestone</div>
+            <div class="project-preview-visual p-gradient-5">
+              <div class="play-hover-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div style="display:flex; flex-direction:column; align-items:center;">
+                <div style="width:48px; height:48px; border-radius:50%; background:radial-gradient(circle, #ff4d4d 0%, #b91c1c 100%); box-shadow: 0 0 25px rgba(239, 68, 68, 0.7); margin-bottom:12px;"></div>
+                <span class="kinetic-text" style="font-size:1.1rem; color:#fca5a5;">RED BALL STUDY</span>
+                <span style="font-size:0.75rem; color:#cbd5e1;">Inspired by Red Dot Game</span>
+              </div>
+            </div>
+            <div class="aspect-indicator">Animation Study</div>
+          </div>
+          
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Animation Principles</span>
+              <span class="tag">Squash & Stretch</span>
+              <span class="tag">Velocity Curves</span>
+              <span class="tag">Premiere Pro</span>
+            </div>
+            <h3 class="project-title" onclick="openProjectModal('red-ball')">Animation — First Project (Red Ball Motion Study)</h3>
+            <p class="project-summary">
+              My foundational animation project: a red ball navigating dynamically across the screen. An in-depth study into squash & stretch, bounce anticipation, and velocity curves inspired by the red dot game.
+            </p>
+            <div class="project-footer">
+              <button class="link-btn" onclick="openProjectModal('red-ball')">
+                View Breakdown & Video
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: Personal Animation Collection -->
+        <article class="project-card" data-category="animation">
+          <div class="project-media-wrapper" onclick="openProjectModal('personal-animation')">
+            <div class="project-badge">Animation Lab</div>
+            <div class="project-preview-visual p-gradient-1">
+              <div class="play-hover-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="preview-text-art">
+                <span class="kinetic-text" style="color: #c084fc;">MOTION LAB</span>
+                <span class="kinetic-text outline">PERSONAL WORK</span>
+                <span class="kinetic-text glow" style="font-size:1rem; color:#e9d5ff;">2-3 CREATIVE VIDEOS</span>
+              </div>
+            </div>
+            <div class="aspect-indicator">Creative Suite</div>
+          </div>
+          
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Motion Graphics</span>
+              <span class="tag">Figma</span>
+              <span class="tag">Photoshop</span>
+              <span class="tag">Sound Design</span>
+            </div>
+            <h3 class="project-title" onclick="openProjectModal('personal-animation')">Animation — Personal Works Collection</h3>
+            <p class="project-summary">
+              A self-directed series of 2-3 creative animation videos exploring character rhythm, shape transitions, kinetic pacing, and synchronized audio accents.
+            </p>
+            <div class="project-footer">
+              <button class="link-btn" onclick="openProjectModal('personal-animation')">
+                View Breakdown & Video
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Google Drive Video Archive Callout -->
+      <div class="drive-archive-banner" id="drive">
+        <div class="drive-banner-info">
+          <div class="drive-icon-box">📁</div>
+          <div>
+            <h3>Full Google Drive Video Vault</h3>
+            <p>Access all master renders, original cuts, animation exports, and high-resolution video assets.</p>
+          </div>
+        </div>
+        <a href="https://drive.google.com/drive/u/1/folders/1Zr5mNo9_dqPJ4Ok-o-em3oodoKjJ1eJK" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+          Open Google Drive Folder ↗
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Software & Skills Grid -->
+  <section class="toolkit-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Core Competencies</div>
+        <h2 class="section-title">Software & Creative Capabilities</h2>
+        <p class="section-desc">The software, toolkits, and creative disciplines I use to bring ideas to life.</p>
+      </div>
+
+      <!-- Core Skills Pill Banner -->
+      <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap; margin-bottom:48px;">
+        <div class="stat-card" style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius-pill); padding:10px 24px;">
+          <span style="font-weight:700; color:var(--accent-cyan);">✨ ANIMATION</span>
+        </div>
+        <div class="stat-card" style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius-pill); padding:10px 24px;">
+          <span style="font-weight:700; color:var(--accent-purple);">🎬 VIDEO EDITING</span>
+        </div>
+        <div class="stat-card" style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius-pill); padding:10px 24px;">
+          <span style="font-weight:700; color:#38bdf8;">🤖 AI & GENERATIVE VIDEO</span>
+        </div>
+        <div class="stat-card" style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius-pill); padding:10px 24px;">
+          <span style="font-weight:700; color:#34d399;">📱 CONTENT CREATION</span>
+        </div>
+      </div>
+
+      <!-- Software Grid -->
+      <div class="tools-grid">
+        <!-- DaVinci Resolve -->
+        <div class="tool-card">
+          <div class="tool-badge-logo dr">Dv</div>
+          <div class="tool-info">
+            <h4>DaVinci Resolve</h4>
+            <p>Color grading, node workflows, color space transforms, and primary/secondary corrections.</p>
+            <span class="proficiency-badge">Color & Editing</span>
+          </div>
+        </div>
+
+        <!-- Premiere Pro -->
+        <div class="tool-card">
+          <div class="tool-badge-logo pr">Pr</div>
+          <div class="tool-info">
+            <h4>Adobe Premiere Pro</h4>
+            <p>Timeline assembly, multi-track cutting, J/L-cuts, audio ducking, and commercial delivery.</p>
+            <span class="proficiency-badge">Primary NLE</span>
+          </div>
+        </div>
+
+        <!-- Photoshop -->
+        <div class="tool-card">
+          <div class="tool-badge-logo ps">Ps</div>
+          <div class="tool-info">
+            <h4>Adobe Photoshop</h4>
+            <p>Asset masking, thumbnail composition, texture prep, and visual asset design.</p>
+            <span class="proficiency-badge">Asset Preparation</span>
+          </div>
+        </div>
+
+        <!-- InDesign -->
+        <div class="tool-card">
+          <div class="tool-badge-logo id">Id</div>
+          <div class="tool-info">
+            <h4>Adobe InDesign</h4>
+            <p>Editorial layout, typographic hierarchy, pitch decks, and brand style guides.</p>
+            <span class="proficiency-badge">Layout & Design</span>
+          </div>
+        </div>
+
+        <!-- Figma -->
+        <div class="tool-card">
+          <div class="tool-badge-logo fg">Fg</div>
+          <div class="tool-info">
+            <h4>Figma</h4>
+            <p>Storyboard planning, vector layout, UI design, and social media asset framing.</p>
+            <span class="proficiency-badge">Design & Planning</span>
+          </div>
+        </div>
+
+        <!-- Canva -->
+        <div class="tool-card">
+          <div class="tool-badge-logo cv">Cv</div>
+          <div class="tool-info">
+            <h4>Canva</h4>
+            <p>Rapid social graphics, marketing collaterals, and fast-turnaround ad layouts.</p>
+            <span class="proficiency-badge">Social Media Ads</span>
+          </div>
+        </div>
+
+        <!-- AI Mastery & Generative Tools -->
+        <div class="tool-card" style="grid-column: 1 / -1; border-color: rgba(139, 92, 246, 0.4); background: linear-gradient(135deg, rgba(24, 32, 51, 0.9) 0%, rgba(13, 17, 26, 0.95) 100%);">
+          <div class="tool-badge-logo ai">AI</div>
+          <div class="tool-info">
+            <h4>AI Mastery & Generative Video Workflow</h4>
+            <p>Certified in AI Mastery courses. Experienced in integrating generative AI video tools, automated voice synthesis, prompt engineering, and kinetic captions for viral short-form content.</p>
+            <span class="proficiency-badge" style="background: rgba(139, 92, 246, 0.2); color: #a78bfa;">AI Course Certified</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Methodology</div>
+        <h2 class="section-title">How I Approach Every Cut & Animation</h2>
+        <p class="section-desc">
+          Every project is handled with the same dedication—from client brand launches to passion animations.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="process-step-num">01</div>
+          <div class="process-icon">🎯</div>
+          <h3>Story & Retention First</h3>
+          <p>
+            Whether it’s a 15-second commercial ad or a YouTube wildlife doc, the first 3 seconds decide the rest. I eliminate dead air and maintain tension.
+          </p>
+          <ul class="process-points">
+            <li>Strong visual hook design</li>
+            <li>Rhythm matching emotional intent</li>
+          </ul>
+        </div>
+
+        <div class="process-card">
+          <div class="process-step-num">02</div>
+          <div class="process-icon">⚡</div>
+          <h3>Animation & Motion Physics</h3>
+          <p>
+            Keyframes need life. Rooted in classical animation principles—squash, stretch, anticipation, and smooth bezier velocity curves.
+          </p>
+          <ul class="process-points">
+            <li>Snappy velocity easing curves</li>
+            <li>Elasticity & natural momentum</li>
+          </ul>
+        </div>
+
+        <div class="process-card">
+          <div class="process-step-num">03</div>
+          <div class="process-icon">🔊</div>
+          <h3>Layered Sound Design</h3>
+          <p>
+            Video without sound design is only half alive. I layer impacts, ambient beds, foley textures, and risers to produce a tactile audio landscape.
+          </p>
+          <ul class="process-points">
+            <li>Foley audio & environmental beds</li>
+            <li>Dynamic audio ducking for clarity</li>
+          </ul>
+        </div>
+
+        <div class="process-card">
+          <div class="process-step-num">04</div>
+          <div class="process-icon">🎨</div>
+          <h3>DaVinci Color Grading & Delivery</h3>
+          <p>
+            Color sets the mood. Using DaVinci Resolve, I balance exposure, match shots across scenes, and craft distinctive color palettes.
+          </p>
+          <ul class="process-points">
+            <li>Accurate skin tones & tonal range</li>
+            <li>Targeted color management (Rec.709)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section class="about-section" id="about">
+    <div class="container about-container">
+      <div class="about-image-card">
+        <div class="avatar-placeholder">
+          <div class="avatar-circle">
+            <span class="avatar-emoji">🎬</span>
+          </div>
+          <div class="avatar-caption">
+            <strong>Shreshttha Goel</strong>
+            <span>Video Editor, Animator & Motion Designer</span>
+          </div>
+        </div>
+        <div class="about-tags-cloud">
+          <span>✨ Animation</span>
+          <span>🎞️ Video Editing</span>
+          <span>🤖 AI Mastery</span>
+          <span>📱 Content Creation</span>
+          <span>📁 Clean Timeline Structure</span>
+        </div>
+      </div>
+
+      <div class="about-text-content">
+        <div class="section-tag">About Me</div>
+        <h2 class="section-title">Crafting visual rhythm that connects with audiences.</h2>
+        <p class="about-bio" style="font-size:1.15rem; color:#f1f5f9; font-weight:500;">
+          “I cut stories that hold attention and build motion graphics that make brands feel alive. A mix of client campaigns and self-directed work, all shot, edited, or animated with the same care.”
+        </p>
+        <p class="about-bio">
+          Whether cutting commercial launch spots for companies like <strong>Zentilo</strong>, crafting high-converting Instagram ad reels for <strong>TRIVYOM</strong>, editing nature documentaries for <strong>Wildlife Enthusiast</strong>, or building hand-animated motion studies—I approach every project with focus, rapid turnaround, and a modern eye for visual trends.
+        </p>
+        <div class="about-cta-bar">
+          <a href="#contact" class="btn btn-primary">Let's Discuss Opportunities</a>
+          <a href="https://drive.google.com/drive/u/1/folders/1Zr5mNo9_dqPJ4Ok-o-em3oodoKjJ1eJK" target="_blank" rel="noopener" class="btn btn-secondary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+            </svg>
+            Google Drive Video Vault ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container contact-container">
+      <div class="section-header">
+        <div class="section-tag">Get in Touch</div>
+        <h2 class="section-title">Let’s Collaborate on Your Next Project</h2>
+        <p class="section-desc">
+          Available for full-time video editor & animator roles, agency contracts, and freelance projects.
+        </p>
+      </div>
+
+      <div class="contact-card-box">
+        <div class="contact-info-col">
+          <h3>Contact Details</h3>
+          <p>Reach out directly via email, phone, or LinkedIn.</p>
+
+          <!-- Email -->
+          <div class="contact-method" onclick="copyEmail()">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <span class="method-label">Direct Email (Click to copy)</span>
+              <span class="method-val" id="emailVal">shreshtthagoel19@gmail.com</span>
+            </div>
+            <span class="copy-badge" id="copyEmailTooltip">Copy</span>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-method" onclick="copyPhone()">
+            <div class="contact-icon">📞</div>
+            <div>
+              <span class="method-label">Phone / WhatsApp (Click to copy)</span>
+              <span class="method-val" id="phoneVal">8853714778</span>
+            </div>
+            <span class="copy-badge" id="copyPhoneTooltip">Copy</span>
+          </div>
+
+          <!-- Google Drive Folder -->
+          <a href="https://drive.google.com/drive/u/1/folders/1Zr5mNo9_dqPJ4Ok-o-em3oodoKjJ1eJK" target="_blank" rel="noopener" class="contact-method" style="text-decoration:none;">
+            <div class="contact-icon">📁</div>
+            <div>
+              <span class="method-label">Google Drive Video Portfolio</span>
+              <span class="method-val" style="color:var(--accent-cyan);">View All Video Files & Cuts ↗</span>
+            </div>
+          </a>
+
+          <div class="socials-list">
+            <a href="https://www.linkedin.com/in/shreshttha-goel-59b5812b7/" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+              <span>LinkedIn Profile</span> ↗
+            </a>
+            <a href="mailto:shreshtthagoel19@gmail.com" class="social-link" title="Send Email">
+              <span>Send Direct Email</span> ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-col">
+          <form id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="name">Your Name / Company</label>
+              <input type="text" id="name" required placeholder="e.g. Creative Director at Studio" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" required placeholder="you@company.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="projectType">Role / Project Type</label>
+              <select id="projectType">
+                <option value="Full-time Role">Full-Time Video Editor / Animator</option>
+                <option value="Freelance Project">Freelance / Contract Video Editing</option>
+                <option value="Animation Project">Motion Graphics / 2D Animation Project</option>
+                <option value="General Inquiry">General Creative Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project Details or Message</label>
+              <textarea id="message" rows="4" required placeholder="Tell me about your timeline, project vision, or position requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Send Message
+              <svg class="btn-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+              </svg>
+            </button>
+            <div class="form-feedback" id="formFeedback"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="currentYear"></span> Shreshttha Goel. Video Editor, Animator & Motion Designer.</p>
+      <a href="#hero" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Universal Video Modal -->
+  <div class="video-modal-overlay" id="videoModal" onclick="closeModalOnBackdrop(event)">
+    <div class="video-modal-content">
+      <button class="modal-close-btn" onclick="closeVideoModal()" aria-label="Close modal">✕</button>
+      
+      <!-- Video Player Frame -->
+      <div class="modal-player-container" id="modalPlayerContainer">
+        <!-- Injected dynamically via script.js -->
+      </div>
+
+      <!-- Project Case Study Breakdown -->
+      <div class="modal-details" id="modalDetails">
+        <div class="modal-header-row">
+          <div>
+            <span class="modal-badge" id="modalCategory">Category</span>
+            <h3 class="modal-title" id="modalTitle">Project Title</h3>
+          </div>
+          <div class="modal-tools" id="modalTools">
+            <!-- Badges -->
+          </div>
+        </div>
+
+        <div class="modal-body-grid">
+          <div class="modal-col">
+            <h4>Objective & Project Brief</h4>
+            <p id="modalObjective">Description of what needed to be achieved.</p>
+          </div>
+          <div class="modal-col">
+            <h4>Creative Approach & Execution</h4>
+            <p id="modalApproach">The exact steps, keyframe details, and editing decisions made.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
